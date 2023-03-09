@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --ficsit-primary-color: #FA9549;
+    --ficsit-secondary-color: #5F668C;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: var(--ficsit-secondary-color);
+}
+
+body {
+    background-color: var(--ficsit-primary-color);
+}
+
+/* TODO: Every other section should flow from right to left. */
