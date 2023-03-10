@@ -7,12 +7,33 @@
 // Select the container element via querySelector
 let div = document.querySelector("#api_display");
 
+
 // Asynchronously load PublicAPIs request (GET) via fetch
-let getResponse = async function(){
-    let resource = "https://api.publicapis.org/entries";
+let getResponse = async function(event){
+    event.preventDefault();
+
+    // See which button was clicked
+    let button = event.target.id;
+    let resource;
+    if(button == "randomButton"){
+        resource = "https://api.publicapis.org/random"
+    }
+    else{
+        resource = "https://api.publicapis.org/entries";
+    }
+
+
+    // TODO: Construct the GET request URL string.
+
     let options = {method: "GET"};
     let response =  await (await fetch(resource, options)).json();
     let entries = response["entries"];
+
+    // Clear the table if already exist.
+    if(document.querySelector("#table")){
+        let table = document.querySelector("#table");
+        table.remove();
+    }
 
     // Create a table with count + 1 rows (the first is the column names);
     let table = document.createElement("table");
@@ -56,10 +77,11 @@ let getResponse = async function(){
 
     // Insert table into the document
 
-    // TODO: Check if a table already exists. If yes, replace.
-
     div.appendChild(table);
-    console.log(response);
+    //console.log(response);
 }
 
-getResponse();
+
+// Disable default action on form
+let form = document.querySelector("form");
+form.addEventListener("click", getResponse);
