@@ -11,6 +11,7 @@
 .container{
     display: flex;
     flex-direction: column;
+    margin-left: 1.5rem;
 }
 
 header{
@@ -22,3 +23,12 @@ body {
 }
 
 /* TODO: Every other section should flow from right to left. */
+
+img{
+    max-width: 600px;
+}
+
+#starting_locations{
+    display: flex;
+    align-items: flex-end;
+}

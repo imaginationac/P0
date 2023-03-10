@@ -10,42 +10,42 @@
 </head>
 <body>
     <header>
-        <h1>
-            FICSIT Pioneer Manual
-        </h1>
-        <nav>
-            <a href="#welcome">Welcome</a>
-            <a href="#planetfall">Planetfall</a>
-            <a href="#hub">Building the Hub</a>
-            <a href="#finding_resources">Finding Resources</a>
-            <a href="#collecting_resources">Collecting Resources</a>
-            <a href="#automation">Automation</a>
-            <a href="#milestones">Completing Milestones</a>
-            <a href="#space_elevator">Space Elevator</a>
-        </nav>
+        <div class="container">
+            <h1>
+                FICSIT Pioneer Manual
+            </h1>
+            <nav>
+                <a href="#welcome">Welcome</a>
+                <a href="#planetfall">Planetfall</a>
+                <a href="#hub">Building the Hub</a>
+                <a href="#finding_resources">Finding Resources</a>
+                <a href="#collecting_resources">Collecting Resources</a>
+                <a href="#automation">Automation</a>
+                <a href="#milestones">Completing Milestones</a>
+                <a href="#space_elevator">Space Elevator</a>
+            </nav>
+        </div>
     </header>
-    <div class="container">
-        <section>
-            <h2 id="welcome">Welcome</h2>
-            <p>Congratulations, new FICSIT Pioneer! You are about to embark on a journey across the stars to a destination most fantastical: MASSAGE-2(A-B)b in the binary star system of Akycha.
-                Once planetside, you will be tasked with finding natural resources, constructing machines to mine and process them, and automating the process to further exploit the planet.
-                Initial surveys suggest 4 particular biomes as relatively safe landing zones. </p>
-                <div id="starting_locations">
-                    <h3>Grass Fields</h2>
+    <main>
+        <div class="container">
+            <section>
+                <h2 id="welcome">Welcome</h2>
+                <p>Congratulations, new FICSIT Pioneer! You are about to embark on a journey across the stars to a destination most fantastical: MASSAGE-2(A-B)b in the binary star system of Akycha.
+                    Once planetside, you will be tasked with finding natural resources, constructing machines to mine and process them, and automating the process to further exploit the planet.
+                    Initial surveys suggest 4 particular biomes as relatively safe landing zones. </p>
+                    <h3>Staring Locations</h3>
+                    <div id="starting_locations">
                         <img src="images\Satisfactory_2023_03_09_221622.png" alt="Grass Fields info card. Blurb reads: Ideal for first-time pioneer. The first
                         building location FICSIT had found, standing out because of its open and relavtively flat fields. Considering
                         the distances between mining locations, building outposts and/or large transportation lines
                         may be necessary eventually."/>
-                        <h3>Rocky Desert</h3>
                         <img src="images\Satisfactory_2023_03_09_221643.png" alt="Rocky Desert info card. Blurb reads:
                         Suitable for first-time pioneers. The textbook example of a FICSIT-approved building location,
                         with balanced resources, space, and distances. Additionally, it is very close to the sea,
                         making water an easy commodity."/>
-                        <h3>Northern Forest</h3>
                         <img src="images\Satisfactory_2023_03_09_221718.png" alt="Northern Forest info card. Blurb reads: Good for more experienced pioneers.
                         A lush building location with man height differences and few open areas, challanging conventional building and planning methods.
                         Despite these challanges, it caught our eye due to the richness of its resources.">
-                        <h3>Dune Desert</h3>
                         <img src="images\Satisfactory_2023_03_09_221735.png" alt="Dune Desert info card. Blurb reads: Recommended for advanced pioneers. Initially considered
                         too risky, further investigation has convinced us that this area is viable for building with is large, open spaces
                         and plentiful mining locations. Foilage and water locations are rare and contained, making inital
@@ -105,31 +105,36 @@
                             </p>
                             <form action="">
                                 <!--<label for="title">API Name</label>
-                                <input type="text" name="title" id="title">
-                                <label for="description">Description</label>
-                                <input type="text" name="description" id="description">
-                                <label for="Auth Type"></label>
-                                <select name="auth" id="auth">
-                                    <optgroup>
-                                        <option value="none"></option>
-                                        <option value="apiKey">apiKey</option>
-                                        <option value="OAuth">OAuth</option>
-                                        <option value="X-Mashape-Key">X-Mashape-Key</option>
-                                        <option value="User-Agent">User-Agent</option>
-                                    </optgroup>
-                                </select>
-                                <label for="https">HTTPS?</label>
-                                <input type="checkbox" name="https" id="https">
-                                <label for="cors">Cors?</label>
-                                <input type="checkbox" name="cors" id="cors">
-                                <label for="category">Category</label>
-                                <input type="text" name="category" id="category">-->
-                                <button id="submitButton">Full List</button>
-                                <button id="randomButton">Random</button>
-                            </form>
-                            <div id="api_display"><!-- API manipulated infomation goes here --></div>
-                        </section>
-                    </div>
-                    <footer>FICSIT, Satisfactory and all relavent material are &copy; <a href="https://www.coffeestainstudios.com/">Coffee Stain Studios</a>.</footer>
+                                    <input type="text" name="title" id="title">
+                                    <label for="description">Description</label>
+                                    <input type="text" name="description" id="description">
+                                    <label for="Auth Type"></label>
+                                    <select name="auth" id="auth">
+                                        <optgroup>
+                                            <option value="none"></option>
+                                            <option value="apiKey">apiKey</option>
+                                            <option value="OAuth">OAuth</option>
+                                            <option value="X-Mashape-Key">X-Mashape-Key</option>
+                                            <option value="User-Agent">User-Agent</option>
+                                        </optgroup>
+                                    </select>
+                                    <label for="https">HTTPS?</label>
+                                    <input type="checkbox" name="https" id="https">
+                                    <label for="cors">Cors?</label>
+                                    <input type="checkbox" name="cors" id="cors">
+                                    <label for="category">Category</label>
+                                    <input type="text" name="category" id="category">-->
+                                    <button id="submitButton">Full List</button>
+                                    <button id="randomButton">Random</button>
+                                </form>
+                                <div id="api_display"><!-- API manipulated infomation goes here --></div>
+                            </section>
+                        </div>
+                    </main>
+                    <footer>
+                        <div class="container">
+                             FICSIT, Satisfactory and all relavent material are &copy; <a href="https://www.coffeestainstudios.com/">Coffee Stain Studios</a>.
+                        </div>
+                    </footer>
                 </body>
                 </html>
