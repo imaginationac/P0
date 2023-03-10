@@ -6,6 +6,8 @@
 
 // Select the container element via querySelector
 let div = document.querySelector("#api_display");
+let submitButton = document.querySelector("#submitButton");
+let randomButton = document.querySelector("#randomButton");
 
 
 // Asynchronously load PublicAPIs request (GET) via fetch
@@ -82,6 +84,6 @@ let getResponse = async function(event){
 }
 
 
-// Disable default action on form
-let form = document.querySelector("form");
-form.addEventListener("click", getResponse);
+// Disable default action on form buttons.
+submitButton.addEventListener("click", getResponse);
+randomButton.addEventListener("click", getResponse);
