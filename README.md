@@ -1,8 +1,14 @@
 # P0: Website
 
+## Requirements
+
+1. API request
+2. Javascript events
+3. A styled page with css (with the use of flexbox)
+
 ## Subject Matter
 
-The website will be an employee handbook for a FICSIT Pioneer, an employee of the FICSIT Corporation in the fictional universe of [Satisfactory](https:/).
+The website will be an employee handbook for a FICSIT Pioneer, an employee of the FICSIT Corporation in the fictional universe of [Satisfactory](https://www.satisfactorygame.com).
 
 ## Outline
 
